@@ -1,5 +1,5 @@
 .menu {
-    .divider{
+    &_divider{
         width: 935px;
         height: 1px;
         background: #DBDBDB;
@@ -58,8 +58,6 @@
                 background-image: url('../../img/item.jpg');
                 background-position: center;
                 object-fit: cover;  
-
-                
             }
     
             &__item:nth-child(odd){
