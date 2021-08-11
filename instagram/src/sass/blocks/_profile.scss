@@ -1,0 +1,194 @@
+.profile{
+    position: relative;
+    width: 100%;
+    min-height: 444px;
+    .container{
+        padding: 30px 82px 0px 65px;
+    }
+
+    .wrapper{
+        display: flex;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 100px;
+    }
+    
+    &__img {
+        img {
+            height: 152px;
+            width: 152px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__info{
+        position: relative;
+        width: 527px;
+        display: flex;
+        height: 32px;
+
+    }
+
+    &__username{
+        font-weight: bold;
+        font-size: 26px;
+        width: 67px;
+        line-height: 32px;
+        color: #262626;
+    }
+
+    .followbtn{
+        margin-left: 26px;
+        width: 96px;
+        height: 28px;
+        background: #4094EF;
+        border-radius: 3px;
+        border: none;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .addbtn{
+        margin-left: 8px;
+        width: 33px;
+        height: 28px;
+        background: #4094EF;
+        border-radius: 3px;
+        border: none;
+        color: #ffffff;
+        padding-left: 1px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .morebtn{
+        margin-left: 16px;
+        margin-top: 12px;
+        width: 20px;
+        height: 4px;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        background: none;
+        span {
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background: #262626;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .links {
+        margin-top: 19px;
+        width: 340px;
+        display: flex;
+        font-weight: 500;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 21px;
+            color: #262626;
+            span{
+                font-weight: bold;
+            }
+        }
+       
+    }
+
+    .descr{
+        margin-top: 21px;
+        h2 {
+            width: 46px;
+            height: 21px;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 21px;
+            color: #262626;
+        }
+        p{
+            width: 527px;
+            height: 50px;
+            font-size: 17px;
+            line-height: 25px;
+            color: #262626;
+        }
+        a{
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 21px;
+            color: #133768;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        
+    }
+
+    &__highlights {
+        margin-left: -20px;
+        padding-top: 55px;
+        height: 221px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        &__item {
+            margin-right: 55px;
+            width: 78px;
+            height: 78px;
+            left: 45px;
+            top: 278px;
+
+            &__block{
+                height: 86px;
+                width: 86px;
+                border: 1px solid #DBDBDB;
+                border-radius: 50%;
+            }
+
+            .title {
+                margin-top: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                color: #262626;
+            }
+
+            img {
+                display: block;
+                margin: 2.5px auto;
+                width: 78px;
+                height: 78px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        &__item:hover{
+            cursor: pointer;
+        }
+
+        
+    }
+}
+

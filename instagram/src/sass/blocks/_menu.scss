@@ -1,0 +1,89 @@
+.menu {
+    .divider{
+        width: 935px;
+        height: 1px;
+        background: #DBDBDB;
+    }
+
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__tab{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.09em;
+        color: #262626;
+        text-transform: uppercase;
+        img {
+            width: 11.5px;
+            height: 11.5px;
+            margin-right: 6px;
+        }
+    }
+
+    &__tab:first-child{
+        margin-right: 60px;
+    }
+
+    &__tab:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+
+    &__content {
+        display: none; 
+        padding-bottom:  25px;
+      }
+
+      &__content_active {
+        display: block; 
+      }
+
+        .grid-container{
+            display: grid;
+            grid-template: repeat(2, 295px) / repeat(3, 295px);
+            grid-auto-rows: 295px;
+            gap: 25px;
+    
+            &__item{
+                background-image: url('../../img/item.jpg');
+                background-position: center;
+                object-fit: cover;  
+
+                
+            }
+    
+            &__item:nth-child(odd){
+                background-image: url('../../img/gradient-design.jpeg');
+                background-position: center;
+                object-fit: cover; 
+            }
+
+            &__item:hover{
+                    transform: scale(1.02);
+                    filter: saturate(120%);
+                    filter: brightness(1.1);
+                }
+        }
+
+        .tagged{
+            .grid-container{
+                &__item{
+                    background-image: url('../../img/bgc.jpg'); 
+                }
+        
+                &__item:nth-child(odd){
+                    background-image: url('../../img/gradients.jpg');
+                }
+          }
+        }
+}

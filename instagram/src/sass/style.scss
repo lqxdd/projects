@@ -1,0 +1,20 @@
+@import '../fonts/font.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue Cyr Light', sans-serif;
+}
+
+.container{  
+    position: relative;
+    max-width: 935px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/profile';
+@import 'blocks/menu';
+
