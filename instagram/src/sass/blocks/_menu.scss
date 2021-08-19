@@ -55,13 +55,13 @@
             gap: 25px;
     
             &__item{
-                background-image: url('../../img/item.jpg');
+                background-image: url('../../img/gradients.jpg');
                 background-position: center;
                 object-fit: cover;  
             }
     
             &__item:nth-child(odd){
-                background-image: url('../../img/gradient-design.jpeg');
+                background-image: url('../../img/gradients.jpg');
                 background-position: center;
                 object-fit: cover; 
             }
@@ -76,7 +76,7 @@
         .tagged{
             .grid-container{
                 &__item{
-                    background-image: url('../../img/bgc.jpg'); 
+                    background-image: url('../../img/gradients.jpg'); 
                 }
         
                 &__item:nth-child(odd){

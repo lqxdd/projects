@@ -1,0 +1,77 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+
+    &__dialog {
+        width: 935px;
+        height: 600px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__content {
+        position: relative;
+        width: 935px;
+        padding: 0;
+        background-color: #fff;
+        height: 600px;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: 615px 335px;
+        overflow: hidden; 
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        background-image: url('../../img/gradients.jpg');
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__divider {
+                width: 335px;
+                height: 1px;
+                background: #DBDBDB; 
+        }
+    }
+
+    &__close {
+            position: absolute;
+            top: 8px;
+            right: 14px;
+            font-size: 30px;
+            color: #fff;
+            opacity: .9;
+            font-weight: 700;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 100;
+        
+    }
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+
