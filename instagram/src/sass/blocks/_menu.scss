@@ -55,13 +55,13 @@
             gap: 25px;
     
             &__item{
-                background-image: url('../../img/gradients.jpg');
+                background-image: url('../../img/gradients.jpg'); 
                 background-position: center;
                 object-fit: cover;  
             }
     
             &__item:nth-child(odd){
-                background-image: url('../../img/gradients.jpg');
+               /*  background-image: url('../../img/bgc.jpg'); */
                 background-position: center;
                 object-fit: cover; 
             }

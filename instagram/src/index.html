@@ -187,29 +187,77 @@
         <div data-close class="modal__close">&times;</div>
         <div data-close class="modal__dialog">
             <div class="modal__content">
-                <div class="modal__img"></div>
+                <div id="modalimg" class="modal__img"></div>
                 <div class="wrapper">
-                    <div class="wrapper__header">
-                        <img src="" alt="">
-                        <div class="wrapper__name"></div>
-                         <button class="wrapper__btn"></button> 
+                    <div class="header">
+                        <img src="img/avatar.jpg" alt="cat">
+                        <div class="header__name">name</div> 
+                        <button class="header__more">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
+                    <div class="wrapper__divider"></div>
                     
                     <div class="wrapper__comments">
-                        <div class="wrapper__comment"></div>
+                        <div class="wrapper__comment">
+                            <div class="img_block">
+                                <img class="img" src="img/highlight1.jpg" alt="comment">
+                            </div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum culpa provident.</div>
+                        </div>
+                        <div class="wrapper__comment">
+                            <div class="img_block">
+                                <img class="img" src="img/highlight1.jpg" alt="comment">
+                            </div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum culpa provident.</div>
+                        </div>
+                        <div class="wrapper__comment">
+                            <div class="img_block">
+                                <img class="img" src="img/highlight1.jpg" alt="comment">
+                            </div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum culpa provident.</div>
+                        </div>
+                        <div class="wrapper__comment">
+                            <div class="img_block">
+                                <img class="img" src="img/highlight1.jpg" alt="comment">
+                            </div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum culpa provident.</div>
+                        </div>
+                        <div class="wrapper__comment">
+                            <div class="img_block">
+                                <img class="img" src="img/highlight1.jpg" alt="comment">
+                            </div>
+                            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum culpa provident.</div>
+                        </div>
                     </div>
                     <div class="wrapper__divider"></div>
-                    <div class="wrapper__info"></div>
+                    <a href="#"class="wrapper__info">View insights</a>
                     <div class="wrapper__divider"></div>
                     <div class="wrapper__btns">
-                        <div class="wrapper__btn"><img src="" alt=""></div>
-                       
+                        <button id="likebtn" class="likebtn"><img src="icons/instagram/like.svg" alt="like"></button> 
+                        <button class="commentbtn"><img src="icons/oval-black-speech-bubble.svg" alt="like"></button> 
+                        <button class="sendbtn"><img src="icons/send.svg" alt="like"></button> 
+                        <button id="savebtn" class="savebtn"><img src="icons/instagram/bookmark.svg" alt="save"></button>
                     </div>
-                    <div class="wrapper__likes"></div>
-                    <div class="wrapper__date">
+                    <div class="wrapper__likes">
+                        <img class="img" src="img/highlight1.jpg" alt="comment">
+                        <div class="wrapper__likes-text">
+                            Liked by <span> name </span> and <span> 99 others</span>
+                        </div>
                     </div>
+
+                    <p id="date"></p>
+                    <!-- <div class="wrapper__divider"></div> -->
+                    <div class="wrapper__date"></div>
                     <div class="wrapper__divider"></div>
-                    <div class="wrapper__add"></div>
+                    <div class="addcomment">
+                        <img src="icons/smile.svg" alt="smile">
+                        <input type="text" placeholder="Add comment...">
+                        <button class="post">Post
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
